@@ -1,6 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+/**
+ * Esempio split del render in più funzioni.
+ */
+
 class Component extends React.Component {
 
   renderNumber (n, index) {

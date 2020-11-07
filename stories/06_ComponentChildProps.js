@@ -14,7 +14,12 @@ class ChildComponent extends React.Component {
   }
 
   render () {
-    return <h2>{this.completeName}</h2>
+    return (
+      <div>
+        <h2>{this.completeName}</h2>
+        <h2>{this.getCompleteName()}</h2>
+      </div>
+    )
   }
 
 }
@@ -30,12 +35,24 @@ class ChildComponent extends React.Component {
 
 class Component extends React.Component {
 
+  constructor(props) {
+    super(props)
+
+    this.name = "Pippo"
+    this.surname = "Baudo"
+
+    setTimeout(() => {
+      this.name = "Pippo"
+      this.surname = "Inzaghi"
+      this.forceUpdate()
+    }, 2500)
+  }
+
   render () {
     return (
       <div>
         <h1>Hello</h1>
-        <ChildComponent name='Pippo' surname='Baudo' />
-        <ChildComponent name='Simone' />
+        <ChildComponent name={this.name} surname={this.surname} />
       </div>
     )
   }

@@ -1,6 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ChildComponent from './ChildComponent'
+
+/**
+ * Esempio Class Component.
+ */
 
 class Component extends React.Component {
 
@@ -8,7 +11,6 @@ class Component extends React.Component {
     return (
       <div>
         <h1>Hello pippo</h1>
-        <ChildComponent />
       </div>
     )
   }

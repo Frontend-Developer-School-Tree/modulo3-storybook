@@ -7,40 +7,40 @@
  * Esempio di creazione di una classe pre ES6.
  */
 
-// function PersonPreEs6(first, last, age, eyecolor) {
-//   this.firstName = first
-//   this.lastName = last
-//   this.age = age
-//   this.eyeColor = eyecolor
-// }
+function PersonPreEs6(first, last, age, eyecolor) {
+  this.firstName = first
+  this.lastName = last
+  this.age = age
+  this.eyeColor = eyecolor
+}
 
-// PersonPreEs6.prototype.nationality = "English"
+PersonPreEs6.prototype.nationality = "English"
 
-// PersonPreEs6.prototype.name = function() {
-//   return this.firstName + " " + this.lastName
-// }
+PersonPreEs6.prototype.name = function() {
+  return this.firstName + " " + this.lastName
+}
 
-// var myFather = new PersonPreEs6("John", "Doe", 50, "blue")
-// var myMother = new PersonPreEs6("Sally", "Rally", 48, "green")
+var myFather = new PersonPreEs6("John", "Doe", 50, "blue")
+var myMother = new PersonPreEs6("Sally", "Rally", 48, "green")
 
 /**
  * Class constructor example
  * Esempio di creazione di una classe post ES6.
  */
 
-// class PersonPostEs6 {
+class PersonPostEs6 {
 
-//   constructor(first, last, age, eyecolor) {
-//     this.firstName = first
-//     this.lastName = last
-//     this.age = age
-//     this.eyeColor = eyecolor
-//   }
+  constructor(first, last, age, eyecolor) {
+    this.firstName = first
+    this.lastName = last
+    this.age = age
+    this.eyeColor = eyecolor
+  }
 
-//   name() {
-//     return this.firstName + " " + this.lastName
-//   }
-// }
+  name() {
+    return this.firstName + " " + this.lastName
+  }
+}
 
 /**
  * Esempio di oggetto Javascript.
@@ -58,24 +58,21 @@ const person = {
   },
 }
 
-console.log(person.name())
+/**
+ * Esempio creazione di istanze multiple di una classe.
+ */
 
+class Person {
 
-// Esempio istanze classe
+  constructor(name) {
+    this.name = name
+  }
 
-// class Person {
+  getName() {
+    return this.name
+  }
 
-//   constructor(name) {
-//     this.name = name
-//   }
+}
 
-//   getName() {
-//     return this.name
-//   }
-
-// }
-
-// var pippo = new Person('Pippo')
-// var simone = new Person('Simone')
-// console.log(pippo.getName())
-// console.log(simone.getName())
+var pippo = new Person('Pippo')
+var simone = new Person('Simone')
