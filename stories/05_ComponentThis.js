@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 /**
- * Esempio utilizzo del this nelle funzioni e utilizzo del bind.
+ * Esempio di utilizzo del this nelle funzioni e utilizzo del bind().
  */
 
 class Component extends React.Component {

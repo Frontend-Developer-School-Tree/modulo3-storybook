@@ -2,15 +2,25 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 /**
- * Esempio Class Component.
+ * Esempio base di utilizzo dello state.
  */
 
 class Component extends React.Component {
 
+	constructor(props) {
+		super(props)
+
+		this.state = {
+			key1: 'value1',
+			key2: 'value2',
+			// ...
+		}
+	}
+
   render () {
     return (
       <div>
-        <h1>Hello World</h1>
+        {/* ... */}
       </div>
     )
   }
